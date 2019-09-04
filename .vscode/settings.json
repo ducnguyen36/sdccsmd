@@ -1,0 +1,20 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\asia\\.platformio\\penv\\Scripts;C:\\Users\\asia\\.platformio\\penv;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OrCAD\\OrCAD_16.0\\tools\\fet\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\pcb\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\specctra\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\PSpice;C:\\OrCAD\\OrCAD_16.0\\tools\\PSpice\\Library;C:\\OrCAD\\OrCAD_16.0\\tools\\Capture;C:\\OrCAD\\OrCAD_16.0\\tools\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\asia\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\asia\\AppData\\Local\\Programs\\Python\\Python37-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\OrCAD\\OrCAD_16.0\\tools\\fet\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\pcb\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\specctra\\bin;C:\\OrCAD\\OrCAD_16.0\\tools\\PSpice;C:\\OrCAD\\OrCAD_16.0\\tools\\PSpice\\Library;C:\\OrCAD\\OrCAD_16.0\\tools\\Capture;C:\\OrCAD\\OrCAD_16.0\\tools\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\asia\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\asia\\AppData\\Local\\Programs\\Python\\Python37-32\\",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "actionButtons": {
+        "defaultColor": "#ff0034", // Can also use string color names.
+        "loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
+        "reloadButton":"♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+        "commands": [
+            {
+                             // Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "name": "➠",
+                "color": "white",
+                "singleInstance": true,
+                "command": "stcgal -p COM3 -b 57600 .pio\\build\\stc15f2k60s2\\firmware.hex", // This is executed in the terminal.
+            }
+        ]
+    }
+}
